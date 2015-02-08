@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'FOSBPForms'
-  s.version  = '2.0.1'
+  s.version  = '2.0.2'
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'Dynamic forms for iPhone/iPad - iOS 8 and later.'
   s.homepage = 'https://github.com/bpoplauschi/BPForms'

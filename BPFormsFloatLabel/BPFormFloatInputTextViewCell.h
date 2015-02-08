@@ -22,7 +22,7 @@
 //  SOFTWARE.
 
 
-#import "BPFormInputTextViewCell.h"
+#import <BPForms/BPFormInputTextViewCell.h>
 
 @interface BPFormFloatInputTextViewCell : BPFormInputTextViewCell
 
