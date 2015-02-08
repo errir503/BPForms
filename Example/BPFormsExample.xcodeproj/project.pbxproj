@@ -59,7 +59,9 @@
 		1F74BC5856834D6B8CD2CDD7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CB63CE18D4989900FEAC2E /* BPFormTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPFormTextView.h; sourceTree = "<group>"; };
 		43CB63CF18D4989900FEAC2E /* BPFormTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPFormTextView.m; sourceTree = "<group>"; };
-		BAAE235E641B4823AB1CC044 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6392379B1A86DCFD007F73D4 /* FOSBPForms.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FOSBPForms.podspec; path = ../FOSBPForms.podspec; sourceTree = "<group>"; };
+		A0C414EA695E8773A4AB0FD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C6FE451F71021B26A14FB618 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA192D0218C752BD0025FFB4 /* BPFormsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPFormsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA192D0518C752BD0025FFB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA192D0718C752BD0025FFB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,16 +144,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B9B9173E4C33247FDD46E72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6FE451F71021B26A14FB618 /* Pods.debug.xcconfig */,
+				A0C414EA695E8773A4AB0FD2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA192CF918C752BD0025FFB4 = {
 			isa = PBXGroup;
 			children = (
+				6392379B1A86DCFD007F73D4 /* FOSBPForms.podspec */,
 				DA192D0B18C752BD0025FFB4 /* BPFormsExample */,
 				DA192D2D18C752BE0025FFB4 /* BPFormsExampleTests */,
 				DA192D3D18C753270025FFB4 /* Vendor */,
 				DA192D5618C76A770025FFB4 /* Resources */,
 				DA192D0418C752BD0025FFB4 /* Frameworks */,
 				DA192D0318C752BD0025FFB4 /* Products */,
-				BAAE235E641B4823AB1CC044 /* Pods.xcconfig */,
+				5B9B9173E4C33247FDD46E72 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -442,7 +454,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8D58394D5614CEA8C0649C5 /* Check Pods Manifest.lock */ = {
@@ -619,7 +631,7 @@
 		};
 		DA192D3818C752BE0025FFB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAAE235E641B4823AB1CC044 /* Pods.xcconfig */;
+			baseConfigurationReference = C6FE451F71021B26A14FB618 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -634,7 +646,7 @@
 		};
 		DA192D3918C752BE0025FFB4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAAE235E641B4823AB1CC044 /* Pods.xcconfig */;
+			baseConfigurationReference = A0C414EA695E8773A4AB0FD2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
