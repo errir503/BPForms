@@ -24,7 +24,7 @@
 
 #import "BPFormButtonCell.h"
 #import "BPAppearance.h"
-@import Masonry;
+#import <Masonry/Masonry.h>
 
 
 @interface BPFormButtonCell ()
