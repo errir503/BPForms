@@ -21,7 +21,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#import <BPForms/BPFormInputTextFieldCell.h>
+#import "BPFormInputTextFieldCell.h"
 
 /**
  *  Input cell with floating labels. Uses `JVFloatLabeledTextField`

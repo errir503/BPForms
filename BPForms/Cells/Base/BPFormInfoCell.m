@@ -23,7 +23,7 @@
 
 
 #import "BPFormInfoCell.h"
-#import <Masonry.h>
+@import Masonry;
 #import "BPAppearance.h"
 
 

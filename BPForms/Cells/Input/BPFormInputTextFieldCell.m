@@ -22,7 +22,7 @@
 //  SOFTWARE.
 
 #import "BPFormInputTextFieldCell.h"
-#import <Masonry.h>
+@import Masonry;
 #import "BPAppearance.h"
 
 @interface BPFormInputTextFieldCell ()
