@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.subspec 'FloatLabel' do |floatlabel|
     floatlabel.source_files = 'BPFormsFloatLabel/*.{h,m}'
     floatlabel.public_header_files = 'BPFormsFloatLabel/*.h'
-    floatlabel.dependency 'BPForms/Core'
+    floatlabel.dependency 'FOSBPForms/Core'
     floatlabel.dependency 'JVFloatLabeledTextField'
   end
   
