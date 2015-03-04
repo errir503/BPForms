@@ -38,6 +38,8 @@
             BPFormFloatLabelTextField *floatLabelTextField = (BPFormFloatLabelTextField *)self.textField;
             
             [floatLabelTextField floatingLabel].font = [BPAppearance sharedInstance].inputCellTextFieldFloatingLabelFont;
+            floatLabelTextField.floatingLabelTextColor = [BPAppearance sharedInstance].floatingLabelTextColor;
+            floatLabelTextField.floatingLabelActiveTextColor = [BPAppearance sharedInstance].floatingLabelActiveTextColor;
             [floatLabelTextField floatingLabel].backgroundColor = [UIColor clearColor];
         }
     }

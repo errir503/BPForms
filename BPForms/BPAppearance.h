@@ -45,6 +45,8 @@
 
 @property (nonatomic, strong) UIColor *headerFooterLabelTextColor;          // default is dark-gray
 
+@property (nonatomic, strong) UIColor *floatingLabelTextColor;              // default is light-gray
+@property (nonatomic, strong) UIColor *floatingLabelActiveTextColor;        // default is dark-gray
 
 // -- Fonts --
 @property (nonatomic, strong) UIFont *inputCellTextFieldFont;               // default is system-14
