@@ -98,6 +98,7 @@ static NSString *BPInvalidImageName = nil;
     if (self.shouldShowValidation) {
         self.validationImageView = [[UIImageView alloc] init];
         self.validationImageView.hidden = YES;
+        self.validationImageView.contentMode = UIViewContentModeScaleAspectFit;
         [self.contentView addSubview:self.validationImageView];
     }
 }
