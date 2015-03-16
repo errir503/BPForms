@@ -51,16 +51,8 @@
         [self setupTextView];
         
         [self.contentView bringSubviewToFront:self.validationImageView];
-        
-        [self.mandatoryImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(self.textView.mas_left).with.offset(-4).priorityHigh();
-        }];
-        
-        [self.validationImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.textView.mas_right).priorityHigh();
-            make.centerY.equalTo(self.textView.mas_centerY).priorityHigh();
-        }];
     }
+
     return self;
 }
 
@@ -82,13 +74,26 @@
     self.textView.layer.borderWidth = 0.5;
     
     [self.contentView addSubview:self.textView];
-    
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+
     [self.widthConstraint uninstall];
     [self.heightConstraint uninstall];
-    
+
     [self.textView mas_updateConstraints:^(MASConstraintMaker *make) {
-        self.widthConstraint = make.width.equalTo(self.mas_width).offset(-30);
-        make.centerX.equalTo(self.mas_centerX);
+        CGFloat offset = self.mandatoryImageView.bounds.size.width + 5.0f;
+
+        if (self.shouldShowFieldHelp) {
+            offset += self.helpButton.bounds.size.width + 2.0f;
+        }
+        if (self.shouldShowValidation) {
+            offset += self.validationImageView.bounds.size.width + 2.0f;
+        }
+
+        self.widthConstraint = make.width.equalTo(self.mas_width).offset(-offset);
+        make.left.equalTo(self.mandatoryImageView.mas_right).offset(5.0f);
         make.top.equalTo(self.mas_top);
         self.heightConstraint = make.height.equalTo(self.mas_height).offset(-self.spaceToNextCell);
     }];

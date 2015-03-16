@@ -4,7 +4,7 @@ PODS:
 
 DEPENDENCIES:
   - JVFloatLabeledTextField (~> 0.0.7)
-  - Masonry (~> 0.6.0)
+  - Masonry (~> 0.6)
 
 SPEC CHECKSUMS:
   JVFloatLabeledTextField: b6c7d824d231b3c01d14692feada878808480af8

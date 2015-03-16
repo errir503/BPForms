@@ -52,10 +52,12 @@ typedef NS_ENUM(NSInteger, BPFormValidationState) {
 @property (nonatomic, assign) BOOL                  shouldShowInfoCell; // YES if the info cell needs to be displayed
 
 @property (nonatomic, assign) BOOL                  shouldShowValidation;
+@property (nonatomic, assign) BOOL                  shouldShowFieldHelp; // YES if the ? button needs to be displayed
 
 // UI controls
 @property (nonatomic, strong) UIImageView           *mandatoryImageView;
 @property (nonatomic, strong) UIImageView           *validationImageView;
+@property (nonatomic, strong) UIButton              *helpButton;
 
 /**
  *  Refresh the mandatory state based on isMandatory
@@ -82,5 +84,11 @@ typedef NS_ENUM(NSInteger, BPFormValidationState) {
  */
 + (void)setValidImageName:(NSString *)inValidImageName invalidImageName:(NSString *)inInvalidImageName;
 
+/**
+ * Use to set custom image as help button icon
+ *
+ * @param helpImageName - the image name must point to a file in the main bundle
+ */
++ (void)setHelpImageName:(NSString *)helpImageName;
 
 @end
