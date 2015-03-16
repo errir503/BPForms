@@ -64,13 +64,26 @@
     
     // need to set the frame, otherwise there are cases where, even if the constraints are fine, the frame remains zero-rect
     self.button.frame = CGRectMake(roundf(30.0f / 2.0f), self.frame.origin.y, self.frame.size.width - 30.0f, self.frame.size.height);
-    
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+
     [self.widthConstraint uninstall];
     [self.heightConstraint uninstall];
-    
+
     [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
-        self.widthConstraint = make.width.equalTo(self.mas_width).offset(-30);
-        make.centerX.equalTo(self.mas_centerX);
+        CGFloat offset = self.mandatoryImageView.bounds.size.width + 5.0f;
+
+        if (self.shouldShowFieldHelp) {
+            offset += self.fieldHelpButton.bounds.size.width + 4.0f;
+        }
+        if (self.shouldShowValidation) {
+            offset += self.validationImageView.bounds.size.width + 6.0f;
+        }
+
+        self.widthConstraint = make.width.equalTo(self.mas_width).offset(-offset);
+        make.left.equalTo(self.mandatoryImageView.mas_right).offset(5.0f);
         make.top.equalTo(self.mas_top);
         self.heightConstraint = make.height.equalTo(self.mas_height).offset(-self.spaceToNextCell);
     }];
