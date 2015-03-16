@@ -97,11 +97,11 @@ static UIImage *helpImage = nil;
         }
     }
 
-    if (!self.helpButton) {
-        self.helpButton = [[UIButton alloc] init];
-        [self.helpButton setImage:helpImage forState:UIControlStateNormal];
-        self.helpButton.hidden = YES;
-        [self.contentView addSubview:self.helpButton];
+    if (!self.fieldHelpButton) {
+        self.fieldHelpButton = [[UIButton alloc] init];
+        [self.fieldHelpButton setImage:helpImage forState:UIControlStateNormal];
+        self.fieldHelpButton.hidden = YES;
+        [self.contentView addSubview:self.fieldHelpButton];
     }
 }
 
@@ -192,7 +192,7 @@ static UIImage *exclamationMarkImage = nil;
     [self.validationImageView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(checkmarkImage.size.width));
         if (self.shouldShowFieldHelp) {
-            make.right.equalTo(self.helpButton.mas_left).priorityLow();
+            make.right.equalTo(self.fieldHelpButton.mas_left).offset(-4.0f).priorityLow();
         }
         else {
             make.right.equalTo(self.mas_right).priorityLow();
@@ -201,8 +201,8 @@ static UIImage *exclamationMarkImage = nil;
         make.height.equalTo(@(checkmarkImage.size.height));
     }];
 
-    self.helpButton.hidden = !self.shouldShowFieldHelp;
-    [self.helpButton mas_updateConstraints:^(MASConstraintMaker *make) {
+    self.fieldHelpButton.hidden = !self.shouldShowFieldHelp;
+    [self.fieldHelpButton mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(helpImage.size.width));
         make.right.equalTo(self.mas_right).priorityLow();
         make.centerY.equalTo(self.mas_centerY).priorityLow();

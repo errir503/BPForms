@@ -84,10 +84,10 @@
         CGFloat offset = self.mandatoryImageView.bounds.size.width + 5.0f;
 
         if (self.shouldShowFieldHelp) {
-            offset += self.helpButton.bounds.size.width + 2.0f;
+            offset += self.fieldHelpButton.bounds.size.width + 4.0f;
         }
         if (self.shouldShowValidation) {
-            offset += self.validationImageView.bounds.size.width + 2.0f;
+            offset += self.validationImageView.bounds.size.width + 6.0f;
         }
 
         self.widthConstraint = make.width.equalTo(self.mas_width).offset(-offset);

@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger, BPFormValidationState) {
 // UI controls
 @property (nonatomic, strong) UIImageView           *mandatoryImageView;
 @property (nonatomic, strong) UIImageView           *validationImageView;
-@property (nonatomic, strong) UIButton              *helpButton;
+@property (nonatomic, strong) UIButton              *fieldHelpButton;
 
 /**
  *  Refresh the mandatory state based on isMandatory
