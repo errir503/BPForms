@@ -1,6 +1,6 @@
-platform :ios, '6.0'
+platform :ios, '9.0'
 
 use_frameworks!
 
 pod 'Masonry', '~> 0.6'
-pod 'JVFloatLabeledTextField', '~> 0.0.7'
+pod 'JVFloatLabeledTextField', '~> 1.1.0'

@@ -21,7 +21,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#import <JVFloatLabeledTextField/JVFloatLabeledTextField.h>
+@import JVFloatLabeledTextField;
 
 /**
  *  Had to subclass JVFloatLabeledTextField to be able to add our x offset

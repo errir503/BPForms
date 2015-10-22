@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.description = 'Inspired from BZGFormViewController, BPForms allows easily creating beautiful dynamic forms.'
 
   s.requires_arc = true
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '8.4'
 
   s.preserve_paths = 'README*'
 

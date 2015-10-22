@@ -288,7 +288,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    if (self.customSectionHeaderHeight) {
+    if (self.customSectionHeaderHeight != 0.0) {
         return self.customSectionHeaderHeight;
     }
     return [self.tableView sectionHeaderHeight];
@@ -309,7 +309,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    if (self.customSectionFooterHeight) {
+    if (self.customSectionFooterHeight != 0.0) {
         return self.customSectionFooterHeight;
     }
     return [self.tableView sectionFooterHeight];

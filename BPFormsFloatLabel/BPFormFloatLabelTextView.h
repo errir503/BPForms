@@ -21,7 +21,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#import <JVFloatLabeledTextField/JVFloatLabeledTextView.h>
+@import JVFloatLabeledTextField;
 
 @interface BPFormFloatLabelTextView : JVFloatLabeledTextView
 
