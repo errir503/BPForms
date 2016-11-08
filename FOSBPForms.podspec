@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'Dynamic forms for iPhone/iPad - iOS 8 and later.'
   s.homepage = 'https://github.com/bpoplauschi/BPForms'
   s.author   = { 'Bogdan Poplauschi' => 'bpoplauschi@gmail.com' }
-  s.source   = { :git => 'git@bitbucket.org:FOSComputerServices/fospods.git',
+  s.source   = { :git => 'https://github.com/foscomputerservices/BPForms.git',
                  :tag => "#{s.version}" }
 
   s.description = 'Inspired from BZGFormViewController, BPForms allows easily creating beautiful dynamic forms.'
