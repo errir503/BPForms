@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43CB63D218D4989900FEAC2E /* BPFormTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CB63CF18D4989900FEAC2E /* BPFormTextView.m */; };
-		652B1C9B3C6C094B39CDD558 /* Pods_BPFormsExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443269926CF245687AA494BD /* Pods_BPFormsExampleTests.framework */; };
-		80AEB306DDA52E2C0D11BFA2 /* Pods_BPFormsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9005B4B602CBB7ADC79BA3CF /* Pods_BPFormsExample.framework */; };
+		982ECCBCC043D807396B28A6 /* Pods_BPFormsExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1E5A6EAA0C6CD46D3A4948 /* Pods_BPFormsExampleTests.framework */; };
 		DA192D0618C752BD0025FFB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA192D0518C752BD0025FFB4 /* Foundation.framework */; };
 		DA192D0818C752BD0025FFB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA192D0718C752BD0025FFB4 /* CoreGraphics.framework */; };
 		DA192D0A18C752BD0025FFB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA192D0918C752BD0025FFB4 /* UIKit.framework */; };
@@ -44,6 +43,7 @@
 		DA8A34F818D73F710017D814 /* BPFormInputTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A34F218D73F710017D814 /* BPFormInputTextViewCell.m */; };
 		DAA1ED3118C8770800FAAE03 /* BPAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA1ED3018C8770800FAAE03 /* BPAppearance.m */; };
 		DAFE2F4818D1D91A00F3B98D /* BPFormFloatLabelTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE2F4618D1D91A00F3B98D /* BPFormFloatLabelTextField.m */; };
+		F521DCA3E00EE776018D4885 /* Pods_BPFormsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E4B585C6854E88E0055FC4 /* Pods_BPFormsExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +60,12 @@
 		075B0A6C4FE8A3B587561690 /* Pods-BPFormsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPFormsExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BPFormsExample/Pods-BPFormsExample.release.xcconfig"; sourceTree = "<group>"; };
 		43CB63CE18D4989900FEAC2E /* BPFormTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPFormTextView.h; sourceTree = "<group>"; };
 		43CB63CF18D4989900FEAC2E /* BPFormTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPFormTextView.m; sourceTree = "<group>"; };
-		443269926CF245687AA494BD /* Pods_BPFormsExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BPFormsExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D8DB96A7A6C1D5F4A035AB9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1E5A6EAA0C6CD46D3A4948 /* Pods_BPFormsExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BPFormsExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		637C7E521A8D4089008A4A93 /* BPForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPForms.h; sourceTree = "<group>"; };
 		6392379B1A86DCFD007F73D4 /* FOSBPForms.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FOSBPForms.podspec; path = ../FOSBPForms.podspec; sourceTree = "<group>"; };
-		9005B4B602CBB7ADC79BA3CF /* Pods_BPFormsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BPFormsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9793A53627348BE07EC3469C /* Pods-BPFormsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPFormsExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BPFormsExample/Pods-BPFormsExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A47288281025DD85B318A16B /* Pods-BPFormsExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPFormsExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BPFormsExampleTests/Pods-BPFormsExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		B4E4B585C6854E88E0055FC4 /* Pods_BPFormsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BPFormsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA192D0218C752BD0025FFB4 /* BPFormsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPFormsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA192D0518C752BD0025FFB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA192D0718C752BD0025FFB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,7 +132,7 @@
 				DA192D0818C752BD0025FFB4 /* CoreGraphics.framework in Frameworks */,
 				DA192D0A18C752BD0025FFB4 /* UIKit.framework in Frameworks */,
 				DA192D0618C752BD0025FFB4 /* Foundation.framework in Frameworks */,
-				80AEB306DDA52E2C0D11BFA2 /* Pods_BPFormsExample.framework in Frameworks */,
+				F521DCA3E00EE776018D4885 /* Pods_BPFormsExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +143,7 @@
 				DA192D2818C752BE0025FFB4 /* XCTest.framework in Frameworks */,
 				DA192D2A18C752BE0025FFB4 /* UIKit.framework in Frameworks */,
 				DA192D2918C752BE0025FFB4 /* Foundation.framework in Frameworks */,
-				652B1C9B3C6C094B39CDD558 /* Pods_BPFormsExampleTests.framework in Frameworks */,
+				982ECCBCC043D807396B28A6 /* Pods_BPFormsExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,9 +191,8 @@
 				DA192D0718C752BD0025FFB4 /* CoreGraphics.framework */,
 				DA192D0918C752BD0025FFB4 /* UIKit.framework */,
 				DA192D2718C752BE0025FFB4 /* XCTest.framework */,
-				5D8DB96A7A6C1D5F4A035AB9 /* Pods.framework */,
-				9005B4B602CBB7ADC79BA3CF /* Pods_BPFormsExample.framework */,
-				443269926CF245687AA494BD /* Pods_BPFormsExampleTests.framework */,
+				B4E4B585C6854E88E0055FC4 /* Pods_BPFormsExample.framework */,
+				5F1E5A6EAA0C6CD46D3A4948 /* Pods_BPFormsExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

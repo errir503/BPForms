@@ -15,19 +15,9 @@ Pod::Spec.new do |s|
 
   s.preserve_paths = 'README*'
 
-  s.default_subspec = 'FloatLabel'
+  s.source_files = 'BPForms/**/*.{h,m}', 'BPFormsFloatLabel/*.{h,m}'
+  s.public_header_files = 'BPForms/**/*.h', 'BPFormsFloatLabel/*.h'
+  s.dependency 'Masonry'
+  s.dependency 'JVFloatLabeledTextField'
 
-  s.subspec 'Core' do |core|
-    core.source_files = 'BPForms/**/*.{h,m}'
-    core.public_header_files = 'BPForms/**/*.h'
-    core.dependency 'Masonry'
-  end
-
-  s.subspec 'FloatLabel' do |floatlabel|
-    floatlabel.source_files = 'BPFormsFloatLabel/*.{h,m}'
-    floatlabel.public_header_files = 'BPFormsFloatLabel/*.h'
-    floatlabel.dependency 'FOSBPForms/Core'
-    floatlabel.dependency 'JVFloatLabeledTextField'
-  end
-  
 end
