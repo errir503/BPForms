@@ -144,7 +144,7 @@ static UIImage *exclamationMarkImage = nil;
         _originalHeight = self.bounds.size.height;
     }
 
-    CGFloat cellHeight = (self.customCellHeight ?: _originalHeight) + self.spaceToNextCell;
+    CGFloat cellHeight = (self.customCellHeight != 0.0 ? 0.0 : _originalHeight) + self.spaceToNextCell;
     return cellHeight;
 }
 

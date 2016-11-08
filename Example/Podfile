@@ -2,5 +2,13 @@ platform :ios, '9.0'
 
 use_frameworks!
 
-pod 'Masonry', '~> 0.6'
-pod 'JVFloatLabeledTextField', '~> 1.1.0'
+target 'BPFormsExample' do
+
+  pod 'Masonry', '~> 0.6'
+  pod 'JVFloatLabeledTextField', '~> 1.1.0'
+
+  target 'BPFormsExampleTests' do
+    inherit! :search_paths
+  end
+
+end

@@ -196,10 +196,14 @@
     
     for (NSArray *section in self.formCells) {
         for (BPFormCell *cell in section) {
-            if (BPFormValidationStateValid != cell.validationState) {
+            if ([cell respondsToSelector:@selector(validationState)] && cell.validationState != BPFormValidationStateValid) {
                 valid = NO;
                 break;
             }
+        }
+        
+        if (!valid) {
+            break;
         }
     }
     
@@ -276,7 +280,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     NSString *headerTitle = self.sectionHeaderTitles[@(section)];
     if (headerTitle) {
-        CGFloat headerHeight = self.customSectionHeaderHeight ?: [self.tableView sectionHeaderHeight];
+        CGFloat headerHeight = self.customSectionHeaderHeight != 0.0 ? 0.0 : [self.tableView sectionHeaderHeight];
         UILabel *infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.frame.size.width, headerHeight)];
         infoLabel.text = headerTitle;
         infoLabel.textColor = [BPAppearance sharedInstance].headerFooterLabelTextColor;
@@ -297,7 +301,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     NSString *footerTitle = self.sectionFooterTitles[@(section)];
     if (footerTitle) {
-        CGFloat footerHeight = self.customSectionFooterHeight ?: [self.tableView sectionFooterHeight];
+        CGFloat footerHeight = self.customSectionFooterHeight != 0.0 ? 0.0 : [self.tableView sectionFooterHeight];
         UILabel *infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.frame.size.width, footerHeight)];
         infoLabel.text = footerTitle;
         infoLabel.textColor = [BPAppearance sharedInstance].headerFooterLabelTextColor;
